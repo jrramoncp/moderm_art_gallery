@@ -1,0 +1,22 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+// RESET // 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: v.$primary-font;
+}
+
+//BASE STYLES
+
+
+.container{
+  max-width: 1400px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
