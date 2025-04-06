@@ -1,5 +1,22 @@
 @use '../abstract/_variables' as v;
 
+//Breakpoints Media Querys
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: 1440px) { @content; }
+    } @else if $point == laptop {
+      @media (max-width: 1439px) and (min-width:1024px ) { @content; }
+    } @else if $point == tablet {
+      @media (max-width: 1023px) and (min-width: 768px) { @content; }
+    } @else if $point == mobile {
+      @media (max-width: 767px) { @content; }
+    }
+  }
+
+
+
+  // Reset List
+
 @mixin reset-list(){
     display: flex;
     list-style-type: none;
@@ -8,6 +25,36 @@
     li{
         a{
             text-decoration: none;
+        }
+    }
+}
+
+// Buttons
+// BUTTONS
+@mixin button_style($type){
+    display: inline-block;
+    border-radius: 8px;
+    padding: 16px 26px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: v.$font_bold;
+    color: v.$white_color;
+    transition: 0.5s ease;
+
+    @if $type == "button_one"{
+        background-color: v.$orange-color; 
+        
+        &:hover{
+            background-color: v.$green-color;
+        }
+    }
+
+    @else if $type == "button_two"{
+        background: v.$lightgrey-color;
+        color: v.$navy-color;
+        &:hover{
+            background-color: v.$navy-color;
+            color: v.$white-color;
         }
     }
 }
