@@ -40,6 +40,7 @@
     font-weight: v.$font-extrabold;
     background-repeat: no-repeat;
     padding: 15px;
+    color: v.$white-color;
 
     @if $type == "button_one"{
         background-image:url(/img/arrow-icon.svg), linear-gradient(90deg, v.$copper-color 75%, v.$black-color 75%, v.$black-color 100%);

@@ -3,8 +3,12 @@
 
 .btn{
     @include m.reset_list();
-    @include m.button_style("button_one");
-    margin-bottom: 10px
+    li{
+        a{
+            @include m.button_style("button_one");
+        }
+    }
+    
 }
 
 .btn_back{
