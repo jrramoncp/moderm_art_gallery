@@ -29,32 +29,39 @@
     }
 }
 
-// Buttons
 // BUTTONS
 @mixin button_style($type){
     display: inline-block;
-    border-radius: 8px;
-    padding: 16px 26px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: v.$font_bold;
-    color: v.$white_color;
     transition: 0.5s ease;
+    text-transform: uppercase;
+    font-family: v.$title-font;
+    font-size: 18px;
+    font-weight: v.$font-extrabold;
+    background-repeat: no-repeat;
+    padding: 15px;
 
     @if $type == "button_one"{
-        background-color: v.$orange-color; 
+        background-image:url(/img/arrow-icon.svg), linear-gradient(90deg, v.$copper-color 75%, v.$black-color 75%, v.$black-color 100%);
+        background-position: center right 18px, 0 0;
+        
+        padding-right: 70px;
+        padding-left: 30px;
         
         &:hover{
-            background-color: v.$green-color;
+          background-image:url(/img/arrow-icon.svg), linear-gradient(90deg, v.$black-color 75%, v.$copper-color 75%, v.$copper-color 100%);
+          background-position: center right 18px, 0 0;
         }
     }
-
-    @else if $type == "button_two"{
-        background: v.$lightgrey-color;
-        color: v.$navy-color;
-        &:hover{
-            background-color: v.$navy-color;
-            color: v.$white-color;
-        }
+    @if $type == "button_two"{
+      background-image:url(/img/back-arrow.svg), linear-gradient(90deg, v.$black-color 25%, v.$copper-color 25%, v.$copper-color 100%);
+      background-position: center left 20px, 0 0;
+      padding-left: 70px;
+      padding-right: 30px;
+      
+      &:hover{
+        background-image:url(/img/back-arrow.svg), linear-gradient(90deg, v.$copper-color 25%, v.$black-color 25%, v.$black-color 100%);
+        background-position: center left 20px, 0 0;
+      }
     }
 }

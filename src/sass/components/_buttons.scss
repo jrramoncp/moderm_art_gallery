@@ -1,0 +1,13 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.btn{
+    @include m.reset_list();
+    @include m.button_style("button_one");
+    margin-bottom: 10px
+}
+
+.btn_back{
+    @include m.reset_list();
+    @include m.button_style("button_two");
+}
