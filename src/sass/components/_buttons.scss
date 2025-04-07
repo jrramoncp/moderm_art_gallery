@@ -13,5 +13,10 @@
 
 .btn_back{
     @include m.reset_list();
-    @include m.button_style("button_two");
+    li{
+        a{
+            @include m.button_style("button_two");
+        }
+    }
+    
 }
