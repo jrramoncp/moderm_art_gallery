@@ -1,3 +1,19 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+.location{
+    
+    .location__header{
+        position: relative;
+        .map__container{
+            iframe{
+                max-width: 100%;
+            }
+        }
+
+        .location_button{
+            position: absolute;
+            top: 0;
+        }
+    }
+}
