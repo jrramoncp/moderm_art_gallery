@@ -1,3 +1,37 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+.home{
+    
+    background-image: url(/img/mobile-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    //HEADER
+    .home__header{
+        margin-top: 15.6rem;
+         .container{
+            //HERO
+            .hero{
+                h1{
+                    font-size:3.75rem ;
+                    font-family: v.$title-font;
+                    max-width: 75%;
+                    font-weight: v.$font-black;
+                    padding-bottom: 32px;
+                    padding-top: 32px;
+                }
+                .hero__description{
+                    padding-bottom: 120px;
+                    p{
+                        font-size: 18px;
+                        font-weight: v.$font-light;
+                        line-height: 28px;
+                        padding-bottom: 32px;
+                    }
+                }
+            }
+         }
+    }
+
+    //
+}
