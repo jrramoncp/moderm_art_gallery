@@ -1,7 +1,29 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
-footer{
+//HOME FOOTER STYLES
+
+.home__footer{
     background-color: v.$black-color;
-    padding: 20px;
+    
+    .container{
+        display: flex;
+        gap: 38px;
+        flex-direction: column;
+        padding: 2rem 3rem;
+        img{
+            max-width: 100px;
+        }
+        p{
+            color: v.$white-color;
+            font-weight: v.$font-light;
+            line-height: 1.6rem;
+        }
+        ul{
+            @include m.reset_list();
+            gap: 1rem;
+        }
+    }
 }
+
+//LOCATION FOOTER STYLES

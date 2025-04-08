@@ -1,3 +1,9 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+//HOME HEADER BG IMG
+.home{
+    background-image: url(/img/mobile-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

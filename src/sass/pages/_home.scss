@@ -2,13 +2,10 @@
 @use '../abstract/_mixins' as m;
 
 .home{
-    
-    background-image: url(/img/mobile-bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+
     //HEADER
     .home__header{
-        margin-top: 15.6rem;
+        margin-top: 60%;
          .container{
             //HERO
             .hero{
@@ -27,11 +24,87 @@
                         font-weight: v.$font-light;
                         line-height: 28px;
                         padding-bottom: 32px;
+                        color: v.$grey-color;
                     }
                 }
             }
          }
     }
 
-    //
+    //MAIN
+    .home__main{
+        .container{
+            display: grid;
+            grid-template-rows: repeat(1fr, 5);
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding-bottom: 120px;
+            
+            .main__content{
+                //article base styles
+                h2{
+                    font-size: 3.2rem;
+                    font-weight: v.$font-black;
+                    line-height:3rem ;
+                    padding-bottom: 1.2rem;
+                    max-width: 80%;
+                    font-family: v.$title-font;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 1,1rem;
+                    font-weight: v.$font-light;
+                    line-height: 1.75rem;
+                    max-width: 80%;
+                }
+            }
+
+            .img__container{
+                max-width: 100%;
+                height: 100%;
+                
+            }
+
+            .text__one{
+                grid-row: 2;
+                color: v.$grey-color;
+            }
+            .img__two{
+                grid-row: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                object-position: center;
+                
+            }
+
+            .img__three{
+                grid-row: 3;
+                height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+
+            .img__one{
+                grid-row: 4;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .text__two{
+                grid-row: 5;
+                background-color: v.$black-color;
+                padding: 48px 23px;
+                h2{
+                    color: v.$white-color;
+                }
+                p{
+                    color: v.$white-color;
+                    max-width: 95%;
+                }
+            }
+        }
+    }
 }
