@@ -6,4 +6,8 @@
     background-image: url(/img/mobile-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
+    @include m.breakpoint("tablet"){
+        background-image: url(/img/tablet-bg.png) ;
+        background-size: 60%;
+    }
 }

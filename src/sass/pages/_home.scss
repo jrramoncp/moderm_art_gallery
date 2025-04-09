@@ -6,24 +6,37 @@
     //HEADER
     .home__header{
         margin-top: 60%;
+        @include m.breakpoint("tablet"){
+            margin-top: 20%;
+            margin-left: 50%;
+        }
          .container{
             //HERO
             .hero{
                 h1{
                     font-size:3.75rem ;
                     font-family: v.$title-font;
-                    max-width: 75%;
+                    max-width: 85%;
                     font-weight: v.$font-black;
-                    padding-bottom: 32px;
-                    padding-top: 32px;
+                    padding-bottom: 2rem;
+                    padding-top: 2rem;
+                    text-transform: uppercase;
+                    @include m.breakpoint("tablet"){
+                        font-size: 4.37rem;
+                        max-width: 100%;
+                        padding-bottom: 3rem;
+                    }
                 }
                 .hero__description{
                     padding-bottom: 120px;
+                    @include m.breakpoint("tablet"){
+                        padding-bottom: 265px;
+                    }
                     p{
-                        font-size: 18px;
+                        font-size: 1.12rem;
                         font-weight: v.$font-light;
                         line-height: 28px;
-                        padding-bottom: 32px;
+                        padding-bottom: 2rem;
                         color: v.$grey-color;
                     }
                 }
