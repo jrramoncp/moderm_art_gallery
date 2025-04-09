@@ -1,21 +1,19 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
-//HOME FOOTER STYLES
-
-.home__footer{
-    background-color: v.$black-color;
+//FOOTER COMMON STYLES
+.home__footer, .location__footer{
     
     .container{
         display: flex;
-        gap: 38px;
+        gap: 2.37rem;
         flex-direction: column;
-        padding: 2rem 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         img{
             max-width: 100px;
         }
         p{
-            color: v.$white-color;
             font-weight: v.$font-light;
             line-height: 1.6rem;
         }
@@ -26,4 +24,22 @@
     }
 }
 
+//HOME FOOTER STYLES
+.home__footer{
+    background-color: v.$black-color;
+    .container{
+        p{
+            color: v.$white-color;
+        }
+    }
+}
+
 //LOCATION FOOTER STYLES
+.location__footer{
+    background-color: v.$copper-color;
+    .container{
+        p{
+            color: v.$black-color;
+        }
+    }
+}
