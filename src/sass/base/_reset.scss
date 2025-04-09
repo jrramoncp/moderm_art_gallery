@@ -20,4 +20,9 @@
   padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+  @include m.breakpoint("tablet"){
+    max-width: 700px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
 }
