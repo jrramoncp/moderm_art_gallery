@@ -12,7 +12,7 @@
         }
         @include m.breakpoint("laptop"){
             margin-top: 10%;
-            margin-bottom: 300px;
+            margin-bottom:35%;
         }
          .container{
             //HERO
@@ -164,10 +164,12 @@
                 @include m.breakpoint("tablet"){
                     display: flex;
                     gap: 0.8rem;
+                    justify-content: space-between;
                 }
                 @include m.breakpoint("laptop"){
                     display: flex;
                     gap: 0.8rem;
+                    justify-content: space-between;
                 }
                 .white__img__container{
                     max-width: 350px;
@@ -197,12 +199,14 @@
                         display: flex;
                         flex-direction: column;
                         gap: 11px;
+                        justify-content: space-between;
                     }
                     @include m.breakpoint("laptop"){
                         max-width: 40%;
                         display: flex;
                         flex-direction: column;
                         gap: 11px;
+                        justify-content: space-between;
                     }
                     .gallery__img__container{
                         max-width: 350px;
@@ -211,6 +215,7 @@
                         }
                         @include m.breakpoint("laptop"){
                             height: 50%;
+                            max-width: 100%;
                         }
                         .gallery__img{
                             width: 100%;
