@@ -21,8 +21,13 @@
   margin-right: auto;
   margin-left: auto;
   @include m.breakpoint("tablet"){
-    max-width: 700px;
+    max-width: 950px;
     padding-left: 39px;
     padding-right: 39px;
+  }
+  @include m.breakpoint("laptop"){
+    max-width: 1300px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

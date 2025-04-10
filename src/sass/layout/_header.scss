@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     @include m.breakpoint("tablet"){
         background-image: url(/img/tablet-bg.png) ;
-        background-size: 60%;
+        background-size: 450px;
+    }
+    @include m.breakpoint("laptop"){
+        background-image: url(/img/bg-img1.png);
+        background-size: 66%;
     }
 }
