@@ -10,12 +10,22 @@
         flex-direction: column;
         padding-top: 3rem;
         padding-bottom: 3rem;
+
+        @include m.breakpoint("tablet"){
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
         img{
             max-width: 100px;
         }
         p{
             font-weight: v.$font-light;
             line-height: 1.6rem;
+            @include m.breakpoint("tablet"){
+                max-width: 40%
+            }
         }
         ul{
             @include m.reset_list();
