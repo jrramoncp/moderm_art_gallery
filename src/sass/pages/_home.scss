@@ -112,6 +112,13 @@
                     justify-content: space-between;
                     align-items: center;
                 }
+                @include m.breakpoint("laptop"){
+                    display: flex;
+                    gap: 0.8rem;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: center;
+                }
 
                 .museum__img__container{
                     max-width: 350px;
@@ -120,10 +127,18 @@
                         max-width: 60%
                         
                     }
+                    @include m.breakpoint("laptop"){
+                        max-width: 60%
+                        
+                    }
 
                     .museum__img{
                         width: 100%;
                         @include m.breakpoint("tablet"){
+                            height: 400px;
+                            object-fit:cover;
+                        }
+                        @include m.breakpoint("laptop"){
                             height: 400px;
                             object-fit:cover;
                         }
@@ -139,11 +154,18 @@
                     @include m.breakpoint("tablet"){
                         max-width: 40%;
                     }
+                    @include m.breakpoint("laptop"){
+                        max-width: 40%;
+                    }
                 }
             }
 
             .gallery__down{
                 @include m.breakpoint("tablet"){
+                    display: flex;
+                    gap: 0.8rem;
+                }
+                @include m.breakpoint("laptop"){
                     display: flex;
                     gap: 0.8rem;
                 }
@@ -153,9 +175,17 @@
                         max-width: 65%;
                         height: 546px;
                     }
+                    @include m.breakpoint("laptop"){
+                        max-width: 80%;
+                        height: 546px;
+                    }
                     .white__img{
                         width: 100%;
                         @include m.breakpoint("tablet"){
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        @include m.breakpoint("laptop"){
                             height: 100%;
                             object-fit: cover;
                         }
@@ -168,14 +198,27 @@
                         flex-direction: column;
                         gap: 11px;
                     }
+                    @include m.breakpoint("laptop"){
+                        max-width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 11px;
+                    }
                     .gallery__img__container{
                         max-width: 350px;
                         @include m.breakpoint("tablet"){
                             height: 40%;
                         }
+                        @include m.breakpoint("laptop"){
+                            height: 50%;
+                        }
                         .gallery__img{
                             width: 100%;
                             @include m.breakpoint("tablet"){
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            @include m.breakpoint("laptop"){
                                 height: 100%;
                                 object-fit: cover;
                             }
@@ -189,9 +232,15 @@
                         @include m.breakpoint("tablet"){
                            max-height: 60%;
                         }
+                        @include m.breakpoint("laptop"){
+                            max-height: 60%;
+                         }
                         h2{
                             color: v.$white-color;
                             @include m.breakpoint("tablet"){
+                                font-size: 40px;
+                            }
+                            @include m.breakpoint("laptop"){
                                 font-size: 40px;
                             }
                         }

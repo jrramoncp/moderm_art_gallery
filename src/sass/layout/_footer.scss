@@ -17,6 +17,12 @@
             align-items: flex-start;
             justify-content: space-between;
         }
+        @include m.breakpoint("laptop"){
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
         img{
             max-width: 100px;
         }
@@ -24,6 +30,9 @@
             font-weight: v.$font-light;
             line-height: 1.6rem;
             @include m.breakpoint("tablet"){
+                max-width: 40%
+            }
+            @include m.breakpoint("laptop"){
                 max-width: 40%
             }
         }

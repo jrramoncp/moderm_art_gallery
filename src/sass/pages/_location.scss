@@ -8,6 +8,18 @@
         .map__container{
             iframe{
                 max-width: 100%;
+                &.large{
+                    display: none;
+                    @include m.breakpoint("laptop"){
+                        display: block;
+                    }
+                }
+                &.small{
+                    @include m.breakpoint("laptop"){
+                        display: none;
+                    }
+                }
+
             }
         }
 
@@ -23,6 +35,11 @@
             padding-top: 3rem;
             padding-bottom: 3.5rem;
             @include m.breakpoint("tablet"){
+                display: flex;
+                justify-content: space-between;
+                padding:5.5rem 2.43rem ;
+            }
+            @include m.breakpoint("laptop"){
                 display: flex;
                 justify-content: space-between;
                 padding:5.5rem 2.43rem ;
