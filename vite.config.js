@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/ModernGallery_site/', // Necesario para despliegue en GitHub Pages
+  base: '/moderm_art_gallery/', // Necesario para despliegue en GitHub Pages
   build: {
     rollupOptions: {
       input: {
