@@ -30,4 +30,9 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  @include m.breakpoint("desktop"){
+    max-width: 1700px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

@@ -14,4 +14,8 @@
         background-image: url(/img/bg-img1.png);
         background-size: 66%;
     }
+    @include m.breakpoint("desktop"){
+        background-image: url(/img/bg-img1.png);
+        background-size: 66% 30%;
+    }
 }

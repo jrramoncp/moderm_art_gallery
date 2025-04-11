@@ -23,6 +23,12 @@
             align-items: flex-start;
             justify-content: space-between;
         }
+        @include m.breakpoint("desktop"){
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
         img{
             max-width: 100px;
         }
@@ -33,6 +39,9 @@
                 max-width: 40%
             }
             @include m.breakpoint("laptop"){
+                max-width: 40%
+            }
+            @include m.breakpoint("desktop"){
                 max-width: 40%
             }
         }
